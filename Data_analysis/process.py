@@ -61,7 +61,7 @@ for ac in ACs:
 
         nodes = [*range(0-distance, 0+distance+1)]
         #nodes = [*range(sender-distance, sender)]
-        result = pd.DataFrame({'Receiver':nodes, 'Minimum Delay':minDelay, 
+        result = pd.DataFrame({'Receiver Node':nodes, 'Minimum Delay':minDelay, 
                                'Average Delay':avgDelay, 'Maximum Delay':maxDelay, 'Minimum PIR':minPIR, 'Average PIR':avgPIR, 
                                'Maximum PIR':maxPIR, 'PDR':PDR, 'RSSI':avgRSSI, 'Contention':avgContention, 'Collision':avgCollisions})
 
