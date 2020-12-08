@@ -59,9 +59,9 @@ for ac in ACs:
     for sender in range(65, 75):
         minDelay, avgDelay, maxDelay, minPIR, avgPIR, maxPIR, PDR, avgRSSI, avgContention, avgCollisions = findMetrics(sender, distance, ac)
 
-        nodes = [*range(sender-distance, sender+distance+1)]
+        nodes = [*range(0-distance, 0+distance+1)]
         #nodes = [*range(sender-distance, sender)]
-        result = pd.DataFrame({'Receiver Node':nodes, 'Minimum Delay':minDelay, 
+        result = pd.DataFrame({'Receiver':nodes, 'Minimum Delay':minDelay, 
                                'Average Delay':avgDelay, 'Maximum Delay':maxDelay, 'Minimum PIR':minPIR, 'Average PIR':avgPIR, 
                                'Maximum PIR':maxPIR, 'PDR':PDR, 'RSSI':avgRSSI, 'Contention':avgContention, 'Collision':avgCollisions})
 
