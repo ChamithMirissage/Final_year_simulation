@@ -1,0 +1,13 @@
+# Wi-Fi for Cooperative Vehicular Communication
+
+Vehicular communication is a very popular and important area in the modern world. Several methods and techniques are used for this. Simply vehicular communication systems can be defined as computer networks in which vehicles and roadside units are the communicating nodes, providing each other with information, such as safety warnings and traffic information. In addition vehicular communication has usually developed as a part of intelligent transportation systems (ITS). 
+
+After studying different factors related to this we selected cooperative vehicular communication using wifi as our project. So we found out different approaches that we can achieve this target. Those are WiFi adhoc, WiFi direct and WiFi beacons. After comparing these approaches we selected wifi beacons for our project. 
+
+Here we hope to include vehicle to vehicle (V2V) and vehicle to infrastructure (V2I) communication. Our entire project can be divided into 3 parts. Those are background study, simulation environment and performance analysis through simulation. In background study we will find out the suitability of wifi beacons for vehicular communications and how we can embed the data inside a beacon frame. In the simulation environment we will set up the  wifi vehicular network  simulation environment and verify simple scenarios with field experiments. In the performance analysis we will simulate the network for different scenarios, evaluate different performance metrics, compare with DSRC and identify possible ITS applications.
+
+Our project can be divided into main two parts. They are simulation and hardware implementation. For the simulation we use omnet++, veins and sumo. Hardware part is done as a proof of concept for simulation using a few wifi dongles.
+
+In the simulation we hope to simulate several scenarios such as Vehicle to vehicle same direction and opposite direction travel and Vehicle to infrastructure communication. Here we evaluate some performance metrics like packet delivery ratio(PDR),  end to end delay and packet inter reception time(PIR) by varying different parameters(beacon frequency, node density, beacon message size, node velocity and transmit power). After analysing these results we will find the suitability of applications under what constraints. 
+
+Our final deliverable of this project is to identify under what constraints, we can use WiFi beacons for ITS applications. Then using the analyzed data we choose the feasibility of wifi for applications under the categories of critical, non-critical, entertainment and commercial. 
